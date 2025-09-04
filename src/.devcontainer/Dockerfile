@@ -1,1 +1,1 @@
-FROM debian:trixie
+FROM mcr.microsoft.com/devcontainers/base:trixie
