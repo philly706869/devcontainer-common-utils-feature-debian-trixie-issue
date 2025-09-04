@@ -2,6 +2,10 @@ name: Build Dev Container Image
 
 on:
   workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: true
 
 permissions:
   packages: write
@@ -24,5 +28,6 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           imageName: ghcr.io/${{ github.repository_owner }}/dcufdti
+          imageTag: ${{ inputs.tag }}
           push: always
           subFolder: src
