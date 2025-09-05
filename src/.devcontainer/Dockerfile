@@ -1,1 +1,1 @@
-FROM debian:trixie
+FROM debian:bookworm

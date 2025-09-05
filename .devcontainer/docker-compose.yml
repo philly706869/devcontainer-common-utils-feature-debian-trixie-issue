@@ -1,6 +1,6 @@
 services:
   app:
-    image: ghcr.io/philly706869/dcufdti
+    image: ghcr.io/philly706869/dcufdti:bookworm
     volumes:
       - ..:/workspace
     command: sleep infinity
